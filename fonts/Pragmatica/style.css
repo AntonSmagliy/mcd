@@ -1,0 +1,12 @@
+@font-face {
+	font-family: "Pragmatica C";
+	src: url("pragmatica-cyrillic.eot"); /* IE9 Compat Modes */
+	src: url("pragmatica-cyrillic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+		url("pragmatica-cyrillic.otf") format("opentype"), /* Open Type Font */
+		url("pragmatica-cyrillic.svg") format("svg"), /* Legacy iOS */
+		url("pragmatica-cyrillic.ttf") format("truetype"), /* Safari, Android, iOS */
+		url("pragmatica-cyrillic.woff") format("woff"), /* Modern Browsers */
+		url("pragmatica-cyrillic.woff2") format("woff2"); /* Modern Browsers */
+	font-weight: normal;
+	font-style: normal;
+}

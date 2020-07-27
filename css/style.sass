@@ -35,7 +35,7 @@ header
                     display: block
                     max-width: 147px
                     color: #202124
-                    font-family: "Muller Regular"
+                    font-family: "Muller"
                     font-size: 12px
                     font-weight: 400
                     line-height: 18px
@@ -178,7 +178,8 @@ header
 
 #exterminate
     background-image: url(../img/exter.png)
-    background-size: contain
+    background-size: cover
+    background-position: center center
     padding: 36px 0
     .contantContainer
         width: 95%
@@ -326,6 +327,9 @@ header
         .dop
             display: flex
             padding: 0 50px
+            img
+                max-width: 45px
+                max-height: 50px
             p
                 font-size: 18px
                 font-weight: 400
@@ -503,4 +507,445 @@ header
             margin-bottom: 30px
         
 #stage
+    font-family: 'Roboto'
+    padding: 80px 0 120px 0
+    background-color: #f5f5f5
     .container
+        width: 95%
+        max-width: 1150px
+        margin: 0 auto
+        h4
+            font-size: 48px
+            font-weight: 900
+            text-transform: uppercase
+            text-align: center
+            margin-bottom: 70px
+        .wrapper
+            .top
+                display: flex
+                justify-content: space-between
+                max-width: 964px
+                margin: 0 auto
+                .mark
+                    position: relative
+                    text-align: center
+                    width: 214px
+                    img
+                        display: block
+                        margin: 0 auto
+                        margin-bottom: 30px
+                        width: 107px
+                    p
+                        font-family: "Montserrat - Semi Bold", sans-serif
+                        font-size: 29px
+                        font-weight: 400
+                        line-height: 43.75px
+                        text-transform: uppercase
+                        position: absolute
+                        left: 50%
+                        top: 30px
+                        transform: translateX(-50%)
+                    span
+                        display: block
+                        font-size: 18px
+                        font-weight: 400
+                        margin: 0 auto
+                    .fir
+                        max-width: 161px
+                    .sec
+                        max-width: 214px
+                    .thir
+                        max-width: 118px
+                    .four
+                        max-width: 164px
+                    .dots
+                        width: 195px
+                        height: 5px
+                        background-image: url(../img/dots.png)
+                        position: absolute
+                        top: 130px
+                        left: 135px
+#quest
+    padding: 150px 0
+    font-family: 'Roboto'
+    background-image: url(../img/questBg.png)
+    .container
+        width: 95%
+        max-width: 1150px
+        margin: 0 auto
+        .wrapper
+            box-sizing: border-box
+            max-width: 868px
+            margin: 0 auto
+            border: 3px solid #e50116
+            background-color: #ffffff
+            padding: 48px 60px 40px 60px
+            h4
+                font-size: 36px
+                font-weight: 900
+                line-height: 24px
+                text-transform: uppercase
+                text-align: center
+                margin-bottom: 15px
+            p
+                text-align: center
+                font-size: 14px
+                font-weight: 400
+                line-height: 24px
+                margin-bottom: 35px
+            form
+                .form-wrapper
+                    display: flex
+                    justify-content: space-between
+                    margin-bottom: 22px
+                    input
+                        display: block
+                        width: 235px
+                        line-height: 50px
+                        padding: 0 10px
+                        border: 1px solid black
+                        &::placeholder
+                            color: #e50116
+                            font-family: "Arial"
+                            font-size: 17px
+                            font-weight: 400
+                            line-height: 24px
+                button
+                    display: block
+                    width: 250px
+                    line-height: 49px
+                    background-color: #e50116
+                    border: none
+                    outline: none
+                    color: #ffffff
+                    font-family: "Pragmatica C"
+                    font-size: 18px
+                    font-weight: 400
+                    margin: 0 auto
+                    margin-bottom: 27px
+                .sign
+                    cursor: pointer
+                    text-align: center
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    font-family: "Arial"
+                    img
+                        margin-right: 5px
+                        max-width: 20px
+                        max-height: 17px
+#scheme
+    padding-top: 75px
+    h4
+        font-family: "Roboto"
+        font-size: 48px
+        font-weight: 900
+        text-transform: uppercase
+        text-align: center
+        margin-bottom: 45px
+    .map
+        img
+            width: 100%
+
+footer
+    font-family: "Pragmatica C"
+    padding-top: 50px
+    .rl
+        width: 100%
+        height: 19px
+        background-color: #e50116
+        margin-top: 20px
+    .container
+        width: 95%
+        max-width: 1150px
+        margin: 0 auto
+        .top
+            display: flex
+            justify-content: space-between
+            align-items: flex-start
+            font-size: 14px
+            font-weight: 400
+            .left
+                img
+                    margin-bottom: 20px
+                .right  
+                    margin-bottom: 20px
+                p
+                    line-height: 25px
+            .center
+                margin-top: 85px
+                ul
+                    list-style-type: none
+                    li
+                        width: 220px
+                        line-height: 30px
+                        border-bottom: 1px solid #353535
+            .right
+                .socLinks
+                    margin-bottom: 45px
+                    a
+                        margin-right: 5px
+                .loc
+                    margin-bottom: 20px
+                    display: flex
+                    align-items: flex-start
+                    img
+                        margin-right: 20px
+                    p
+                        max-width: 180px
+                .wrs
+                    margin-bottom: 20px
+                    img
+                        margin-right: 20px
+                    a
+                        text-decoration: none
+                        color: #000000
+        .bottom
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin-top: 50px
+        
+.burger
+    display: none
+
+//MEDIA QUERIES ---------
+@media all and ( max-width:  1210px )
+    #exterminate 
+        .contantContainer 
+            .container
+                width: fit-content
+                margin: 0 auto
+                .left
+                    padding-right: 30px
+                    h4
+                        font-size: 40px
+                    p
+                        font-size: 37px
+                .right
+                    ul
+                        font-size: 20px
+@media all and ( max-width:  1140px )
+    #menu .container .menu .menuList-item a
+        padding: 0 15px
+
+@media all and ( max-width:  1000px )
+    #stage 
+        .container 
+            .wrapper 
+                .top 
+                    .mark 
+                        .dots
+                            width: 130px
+                            left: 163px
+    #tech 
+        .container 
+            .wrapper
+                flex-direction: column
+                align-items: center
+                .center
+                    display: none
+                .left, .right
+                    p
+                        max-width: 100%
+                .left
+                    margin-bottom: 30px
+
+    #exterminate 
+        background-color: #fff
+        background-image: none
+        .contantContainer 
+            .container
+                flex-direction: column
+                .left
+                    padding: 30px
+                    text-align: center
+                    h4
+                        max-width: 100%
+                .right
+                    padding: 30px
+    header .container .phoneNumbers .wrapper .left img
+        display: none
+
+@media all and ( max-width:  920px )
+    header
+        .container
+            flex-direction: column
+            .logo
+                margin-bottom: 30px
+            .addresInfo
+                margin-bottom: 30px
+            .phoneNumbers
+                a
+                    margin: 0 auto
+@media all and ( max-width:  880px )
+    #quest 
+        .container 
+            .wrapper 
+                form 
+                    .form-wrapper
+                        margin-bottom: 0
+                        flex-direction: column
+                        align-items: center
+                        justify-content: center
+                        input
+                            margin-bottom: 15px
+                            width: 250px
+    #stage .container .wrapper .top .mark .dots
+        display: none
+@media all and ( max-width:  830px )
+    #prof .container .wrapper
+        flex-direction: column
+    #menu 
+        .container 
+            .socLinks
+                display: none
+@media all and ( max-width:  770px )
+    footer 
+        .container 
+            .top
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                .center
+                    margin-top: 25px
+                    margin-bottom: 25px
+            .bottom
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                .left
+                    margin-bottom: 25px
+@media all and ( max-width:  650px )
+    #scheme h4
+        font-size: 35px
+    #stage .container .wrapper .top
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        .mark
+            margin-bottom: 15px
+    #attention 
+        background-image: none
+        padding: 20px 0
+        .container 
+            .wrapper
+                padding: 8px 10px 30px 10px
+                img
+                    width: 100%
+    #prof 
+        .container 
+            h4
+                font-size: 32px
+            .wrapper
+                .right
+                    font-size: 15px
+    #menu 
+        .container 
+            justify-content: flex-end
+            padding: 13px 0
+            .menu
+                display: none
+            .burger
+                display: block
+                span
+                    display: block
+                    height: 1px
+                    width: 25px
+                    margin-bottom: 6px
+                    background-color: black
+                    &:last-child
+                        margin-bottom: 0
+    #exterminate
+        .contantContainer
+            width: 100%
+            .container
+                width: 100% 
+                .left
+                    padding: 10px
+                    h4
+                        font-size: 25px
+                    p
+                        font-size: 23px
+                .right
+                    padding: 10px
+                    ul
+                        font-size: 15px
+    #exterminate .contantContainer .right ul li::before
+        margin-right: 10px
+        width: 32px
+        height: 25px
+        background-size: 100% 100%
+@media all and ( max-width:  600px )
+    #quest 
+        .container 
+            .wrapper 
+                padding: 30px 10px
+                h4
+                    font-size: 28px
+                    line-height: inherit
+                form
+                    .sign
+                        align-items: flex-start
+    #title 
+        .titleContainer 
+            p
+                font-size: 35px
+                text-align: center
+                width: 100%
+            span
+                display: none    
+@media all and ( max-width:  500px )
+    #attention 
+        .container 
+            .wrapper 
+                h5
+                    font-size: 23px
+                .adv
+                    text-align: center
+                .timer
+                    &-item
+                        width: 70px
+                        height: 70px
+                a
+                    padding: 0
+    #priceList 
+        .container
+            h4
+                font-size: 35px
+            h5
+                font-size: 25px 
+            .wrapper 
+                .item 
+                    .left, .right, .center
+                        font-size: 14px
+                        padding: 10px
+    #tech 
+        .container 
+            h4
+                font-size: 32px
+            .wrapper
+                padding: 0 10px
+                .left
+                    p
+                        font-size: 16px 
+                .right
+                    p
+                        font-size: 16px
+            .dop
+                padding: 0 10px
+                p
+                    font-size: 16px
+@media all and ( max-width:  420px )
+    #attention 
+        .container 
+            .wrapper 
+                .timer
+                    flex-wrap: wrap
+                    padding: 0 20%
+                    &-item
+                        margin-bottom: 10px
+    #breadcrumbs
+        display: none
+    header .container .phoneNumbers .wrapper .right a.button
+        display: none
