@@ -2432,6 +2432,9 @@ footer .container .bottom {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  #prof .container .wrapper .left {
+    margin-bottom: 25px;
+  }
   #menu .container .socLinks {
     display: none;
   }
@@ -2724,6 +2727,10 @@ footer .container .bottom {
   #attention .container .wrapper .timer-item {
     width: 70px;
     height: 70px;
+  }
+  #attention .container .wrapper .timer-item p {
+    font-size: 23px;
+    margin-top: 4px;
   }
   #attention .container .wrapper a {
     padding: 0;
