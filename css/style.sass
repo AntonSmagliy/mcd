@@ -570,6 +570,7 @@ header
     padding: 150px 0
     font-family: 'Roboto'
     background-image: url(../img/questBg.png)
+    background-position: right
     .container
         width: 95%
         max-width: 1150px
@@ -578,8 +579,8 @@ header
             box-sizing: border-box
             max-width: 868px
             margin: 0 auto
-            border: 3px solid #e50116
-            background-color: #ffffff
+            border: 1px solid #353535
+            background-color: rgba(255, 255, 255, 0.76)
             padding: 48px 60px 40px 60px
             h4
                 font-size: 36px
@@ -601,10 +602,12 @@ header
                     margin-bottom: 22px
                     input
                         display: block
-                        width: 235px
-                        line-height: 50px
+                        width: calc(50% - 20px)
+                        line-height: 41px
                         padding: 0 10px
                         border: 1px solid black
+                        border-radius: 7px
+                        outline: none
                         &::placeholder
                             color: #e50116
                             font-family: "Arial"
@@ -613,9 +616,10 @@ header
                             line-height: 24px
                 button
                     display: block
-                    width: 250px
-                    line-height: 49px
-                    background-color: #e50116
+                    padding: 0 35px
+                    border-radius: 7px
+                    line-height: 38px
+                    background-image: linear-gradient(to top, #a00413 0%, #e50116 56%, #d32025 100%)
                     border: none
                     outline: none
                     color: #ffffff
@@ -631,10 +635,19 @@ header
                     align-items: center
                     justify-content: center
                     font-family: "Arial"
-                    img
-                        margin-right: 5px
-                        max-width: 20px
-                        max-height: 17px
+                    #singCheck
+                        opacity: 0
+                        margin-right: -16px
+                    #singCheck + label
+                        background: url('../img/unchecked-checkbox.png') no-repeat
+                        display:inline-block
+                        padding: 0 0 0 20px
+                        background-size: 18px 18px
+                    #singCheck:checked + label
+                        background: url(../img/checked.png) no-repeat
+                        background-size: 18px 18px
+
+
 #scheme
     padding-top: 75px
     h4
@@ -1510,18 +1523,6 @@ footer
     #slid
         background-image: none
         background-color: #5b8ac3
-    #quest 
-        .container 
-            .wrapper 
-                form 
-                    .form-wrapper
-                        margin-bottom: 0
-                        flex-direction: column
-                        align-items: center
-                        justify-content: center
-                        input
-                            margin-bottom: 15px
-                            width: 250px
     #stage .container .wrapper .top .mark .dots
         display: none
 @media all and ( max-width:  830px )
@@ -1589,6 +1590,20 @@ footer
                 .left
                     margin-bottom: 25px
 @media all and ( max-width:  650px )
+    #quest 
+        background-position: left
+        .container
+            .wrapper 
+                padding: 20px
+                h4
+                    font-size: 23px
+                form 
+                    .form-wrapper
+                        display: flex
+                        flex-direction: column
+                        input
+                            width: 100%
+                            margin-bottom: 15px
     #disc .container p
         font-size: 23px
     #scheme h4
@@ -1747,16 +1762,7 @@ footer
                                     height: 25px
                                     display: block
                                     background-size: cover
-    #quest 
-        .container 
-            .wrapper 
-                padding: 30px 10px
-                h4
-                    font-size: 28px
-                    line-height: inherit
-                form
-                    .sign
-                        align-items: flex-start
+
     #title 
         .titleContainer 
             p

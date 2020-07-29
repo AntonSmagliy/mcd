@@ -888,6 +888,7 @@ header .container .phoneNumbers .feedback {
   padding: 150px 0;
   font-family: 'Roboto';
   background-image: url(../img/questBg.png);
+  background-position: right;
 }
 
 #quest .container {
@@ -901,8 +902,8 @@ header .container .phoneNumbers .feedback {
           box-sizing: border-box;
   max-width: 868px;
   margin: 0 auto;
-  border: 3px solid #e50116;
-  background-color: #ffffff;
+  border: 1px solid #353535;
+  background-color: rgba(255, 255, 255, 0.76);
   padding: 48px 60px 40px 60px;
 }
 
@@ -935,10 +936,12 @@ header .container .phoneNumbers .feedback {
 
 #quest .container .wrapper form .form-wrapper input {
   display: block;
-  width: 235px;
-  line-height: 50px;
+  width: calc(50% - 20px);
+  line-height: 41px;
   padding: 0 10px;
   border: 1px solid black;
+  border-radius: 7px;
+  outline: none;
 }
 
 #quest .container .wrapper form .form-wrapper input::-webkit-input-placeholder {
@@ -975,9 +978,11 @@ header .container .phoneNumbers .feedback {
 
 #quest .container .wrapper form button {
   display: block;
-  width: 250px;
-  line-height: 49px;
-  background-color: #e50116;
+  padding: 0 35px;
+  border-radius: 7px;
+  line-height: 38px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#a00413), color-stop(56%, #e50116), to(#d32025));
+  background-image: linear-gradient(to top, #a00413 0%, #e50116 56%, #d32025 100%);
   border: none;
   outline: none;
   color: #ffffff;
@@ -1003,10 +1008,20 @@ header .container .phoneNumbers .feedback {
   font-family: "Arial";
 }
 
-#quest .container .wrapper form .sign img {
-  margin-right: 5px;
-  max-width: 20px;
-  max-height: 17px;
+#quest .container .wrapper form .sign #singCheck {
+  opacity: 0;
+  margin-right: -16px;
+}
+
+#quest .container .wrapper form .sign #singCheck + label {
+  background: url("../img/unchecked-checkbox.png") no-repeat;
+  padding: 0 0 0 20px;
+  background-size: 18px 18px;
+}
+
+#quest .container .wrapper form .sign #singCheck:checked + label {
+  background: url(../img/checked.png) no-repeat;
+  background-size: 18px 18px;
 }
 
 #scheme {
@@ -2367,23 +2382,6 @@ footer .container .bottom {
     background-image: none;
     background-color: #5b8ac3;
   }
-  #quest .container .wrapper form .form-wrapper {
-    margin-bottom: 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  #quest .container .wrapper form .form-wrapper input {
-    margin-bottom: 15px;
-    width: 250px;
-  }
   #stage .container .wrapper .top .mark .dots {
     display: none;
   }
@@ -2484,6 +2482,28 @@ footer .container .bottom {
 }
 
 @media all and (max-width: 650px) {
+  #quest {
+    background-position: left;
+  }
+  #quest .container .wrapper {
+    padding: 20px;
+  }
+  #quest .container .wrapper h4 {
+    font-size: 23px;
+  }
+  #quest .container .wrapper form .form-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #quest .container .wrapper form .form-wrapper input {
+    width: 100%;
+    margin-bottom: 15px;
+  }
   #disc .container p {
     font-size: 23px;
   }
@@ -2694,18 +2714,6 @@ footer .container .bottom {
     height: 25px;
     display: block;
     background-size: cover;
-  }
-  #quest .container .wrapper {
-    padding: 30px 10px;
-  }
-  #quest .container .wrapper h4 {
-    font-size: 28px;
-    line-height: inherit;
-  }
-  #quest .container .wrapper form .sign {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
   }
   #title .titleContainer p {
     font-size: 35px;
