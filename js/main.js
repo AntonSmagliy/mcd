@@ -17,5 +17,15 @@ $().ready(function () {
                 }
             }
         ]
+    });
+
+    $('#sliderMain').slick({
+        slidesToShow: 1,
+        prevArrow: '<div class="prevArrow"><img src="img/prar.png" alt=""></div>',
+        nextArrow: '<div class="nextArrow"><img src="img/nxar.png" alt=""></div>'
+    })
+
+    $('.burger').click(function(){
+        $('#menuList').toggleClass('dpb')
     })
 })

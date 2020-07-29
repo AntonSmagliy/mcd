@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="fonts/Muller/style.css">
     <link rel="stylesheet" href="fonts/Pragmatica/style.css">
     <link rel="stylesheet" href="fonts/Arial/style.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -61,7 +62,7 @@
     
     <section id="menu">
         <div class="container">
-            <div class="menu">
+            <div class="menu" id="menuList">
                 <ul class="menuList">
                     <li class="menuList-item"><a href="#">Главная</a></li>
                     <li class="menuList-item"><a href="#">Десинсекция</a></li>
@@ -255,20 +256,20 @@
                 <p>выгодное предложение!</p>
                 <span>Оставьте заявку сейчас и получите скидку 17%</span>
                 <div class="timer">
-                    <div id="days" class="timer-item">
-                        <p>00</p>
+                    <div class="timer-item">
+                        <p  id="days">00</p>
                         <span>дней</span>
                     </div>
-                    <div id="hours" class="timer-item">
-                        <p>00</p>
+                    <div class="timer-item">
+                        <p  id="hours">00</p>
                         <span>часов</span>
                     </div>
-                    <div id="minutes" class="timer-item">
-                        <p>00</p>
+                    <div class="timer-item">
+                        <p id="minutes" >00</p>
                         <span>минут</span>
                     </div>
-                    <div id="sec" class="timer-item">
-                        <p>00</p>
+                    <div class="timer-item">
+                        <p id="seconds">00</p>
                         <span>секунд</span>
                     </div>
                 </div>
@@ -359,7 +360,7 @@
     <section id="scheme">
         <h4>схема проезда</h4>
         <div class="map">
-            <img src="img/map.png" alt="">
+            <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/house/ulitsa_lavochkina_34/Z04Ycg5jQEwGQFtvfXR0d35rYQ==/?lang=ru&ll=37.494667%2C55.856454&utm_medium=mapframe&utm_source=maps&z=17" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Лавочкина, 34 на карте Москвы, ближайшее метро Речной вокзал — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCQpQOXHCC" width="100%" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
         </div>
     </section>
 
@@ -413,7 +414,10 @@
         </div>
         <div class="rl"></div>
     </footer>
-    
+
+    <script src="js/timer.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
