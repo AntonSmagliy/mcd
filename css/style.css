@@ -835,13 +835,14 @@ header .container .phoneNumbers .feedback {
 #stage .container .wrapper .top .mark img {
   display: block;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 43px;
   width: 107px;
 }
 
 #stage .container .wrapper .top .mark p {
   font-family: "Montserrat - Semi Bold", sans-serif;
-  font-size: 29px;
+  font-size: 60px;
+  color: #ffffff;
   font-weight: 400;
   line-height: 43.75px;
   text-transform: uppercase;
@@ -880,7 +881,7 @@ header .container .phoneNumbers .feedback {
   height: 5px;
   background-image: url(../img/dots.png);
   position: absolute;
-  top: 130px;
+  top: 110px;
   left: 135px;
 }
 
